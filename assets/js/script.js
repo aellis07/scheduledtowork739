@@ -1,20 +1,22 @@
 // DEPENDECIES
 
-var currentDateDisplay = $("#currentDay");
+var currentDate = $("#currentDay");
 var today = moment();
 var currentTime = moment().format("LT");
 
-// FUNCTION
+var am7Text = $("#a7");
+var button7 = $("#btn7");
 
-function pageInit() {
-  currentDateDisplay.text(today.format("LL"));
+// FUNCTIONS
+
+function windowReset() {
+  currentDate.text(today.format("LL"));
   findCurrentTime();
 }
 
-pageInit();
+windowReset();
 
 function findCurrentTime() {
-  //reads current hour and compares to equivalent hour value, changes class for CSS styling
   if (currentTime < 7) {
     $("#a7").addClass("future");
   } else if (currentTime == 7) {
@@ -25,8 +27,20 @@ function findCurrentTime() {
   console.log(currentTime);
 }
 
-function storescheduleseven() {
-  var storeseven = localStorage.getItem("7AM", a7Text);
-  a7Text.val(storeseven);
+function storeScheduleSeven() {
+  var storeseven = localStorage.getItem("7AM", am7Text);
+  am7Text.val(storeseven);
   console.log(storeseven);
 }
+
+storeScheduleSeven();
+
+function saveScheduleSeven(event) {
+  event.preventDefault();
+  console.log("Saved successfully");
+  localStorage.setItem("7AM", JSON.stringify(am7Text.val()));
+  am7Text.val("");
+}
+
+// USER INTERACTIONS
+button7.on("click", saveScheduleSeven);
