@@ -8,11 +8,24 @@ body {
   line-height: 1;
 }
 
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: black;
+  border-left: 1px solid black;
+  padding: 30px;
+}
+
 .jumbotron {
   text-align: center;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+.container {
+  margin-right: 75px;
 }
 
 .row {
@@ -31,9 +44,18 @@ body {
   border: 1px dashed black;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  padding-top: 30px;
 }
 
 .description {
   white-space: pre-wrap;
   background-color: rgba(121, 113, 113, 0.295);
+}
+
+.savebutton {
+  border-left: 1px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: lightseagreen;
+  color: white;
 }
