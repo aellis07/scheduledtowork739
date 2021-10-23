@@ -24,3 +24,9 @@ function findCurrentTime() {
   }
   console.log(currentTime);
 }
+
+function storescheduleseven() {
+  var storeseven = localStorage.getItem("7AM", a7Text);
+  a7Text.val(storeseven);
+  console.log(storeseven);
+}
