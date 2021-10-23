@@ -24,3 +24,15 @@ body {
 .timeblock {
   text-align: center;
 }
+
+.hour {
+  background-color: #6c43ad96;
+  color: black;
+  border-top: 1px dashed black;
+  border-right: 1px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+  background-color: rgba(121, 113, 113, 0.295);
+}
