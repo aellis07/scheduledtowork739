@@ -13,7 +13,7 @@ textarea {
   border: none;
   resize: none;
   color: black;
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
   padding: 30px;
 }
 
@@ -40,8 +40,8 @@ textarea {
 
 .hour {
   background-color: #6c43ad96;
-  color: black;
-  border: 1px dashed black;
+  /* color: black; */
+  border: 1px dashed rgba(0, 0, 0, 0.5);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding-top: 30px;
@@ -53,9 +53,24 @@ textarea {
 }
 
 .savebutton {
-  border-left: 1px solid black;
+  border: 1px dashed rgba(0, 0, 0, 0.5);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: lightseagreen;
   color: white;
 }
+
+/* .past {
+  background-color: #a33838;
+  color: white;
+}
+
+.present {
+  background-color: #247b81;
+  color: white;
+}
+
+.future {
+  background-color: #41ca41a6;
+  color: white;
+} */
