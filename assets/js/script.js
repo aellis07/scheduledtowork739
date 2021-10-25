@@ -145,6 +145,126 @@ function findCurrentTime() {
   }
 }
 
+// 8AM FUNCTION
+{
+  function storeScheduleEight() {
+    var storeeight = localStorage.getItem("8AM", am8Text);
+    am8Text.val(storeeight);
+    console.log(storeeight);
+  }
+  function saveScheduleEight(event) {
+    event.preventDefault(am8Text);
+    console.log("Saved successfully");
+    localStorage.setItem("8AM", JSON.stringify(am8Text.val()));
+    am8Text.val("");
+  }
+}
+
+// 9AM FUNCTION
+{
+  function storeScheduleNine() {
+    var storenine = localStorage.getItem("9AM", am9Text);
+    am9Text.val(storenine);
+    console.log(storenine);
+  }
+  function saveScheduleNine(event) {
+    event.preventDefault(am9Text);
+    console.log("Saved successfully");
+    localStorage.setItem("9AM", JSON.stringify(am9Text.val()));
+    am9Text.val("");
+  }
+}
+
+// 10AM FUNCTION
+{
+  function storeScheduleTen() {
+    var storeten = localStorage.getItem("10AM", am10Text);
+    am10Text.val(storeten);
+    console.log(storeten);
+  }
+  function saveScheduleTen(event) {
+    event.preventDefault(am10Text);
+    console.log("Saved successfully");
+    localStorage.setItem("10AM", JSON.stringify(am10Text.val()));
+    am10Text.val("");
+  }
+}
+
+// 11AM FUNCTION
+{
+  function storeScheduleEleven() {
+    var storeeleven = localStorage.getItem("11AM", am11Text);
+    am11Text.val(storeeleven);
+    console.log(storeeleven);
+  }
+  function saveScheduleEleven(event) {
+    event.preventDefault(am11Text);
+    console.log("Saved successfully");
+    localStorage.setItem("11AM", JSON.stringify(am11Text.val()));
+    am11Text.val("");
+  }
+}
+
+// 12PM FUNCTION
+{
+  function storeScheduleTwelve() {
+    var storetwelve = localStorage.getItem("12PM", pm12Text);
+    pm12Text.val(storetwelve);
+    console.log(storetwelve);
+  }
+  function saveScheduleTwelve(event) {
+    event.preventDefault(pm12Text);
+    console.log("Saved successfully");
+    localStorage.setItem("12PM", JSON.stringify(pm12Text.val()));
+    pm12Text.val("");
+  }
+}
+
+// 1PM FUNCTION
+{
+  function storeScheduleOne() {
+    var storeone = localStorage.getItem("1PM", pm1Text);
+    pm1Text.val(storeone);
+    console.log(storeone);
+  }
+  function saveScheduleOne(event) {
+    event.preventDefault(pm1Text);
+    console.log("Saved successfully");
+    localStorage.setItem("1PM", JSON.stringify(pm1Text.val()));
+    pm1Text.val("");
+  }
+}
+
+// 2PM FUNCTION
+{
+  function storeScheduleTwo() {
+    var storetwo = localStorage.getItem("2PM", pm2Text);
+    pm2Text.val(storetwo);
+    console.log(storetwo);
+  }
+  function saveScheduleTwo(event) {
+    event.preventDefault(pm2Text);
+    console.log("Saved successfully");
+    localStorage.setItem("2PM", JSON.stringify(pm2Text.val()));
+    pm2Text.val("");
+  }
+}
+
+// 3PM FUNCTION
+{
+  function storeScheduleThree() {
+    var storethree = localStorage.getItem("3PM", pm3Text);
+    pm3Text.val(storethree);
+    console.log(storethree);
+  }
+  function saveScheduleThree(event) {
+    event.preventDefault(pm3Text);
+    console.log("Saved successfully");
+    localStorage.setItem("3PM", JSON.stringify(pm3Text.val()));
+    pm3Text.val("");
+  }
+}
+
 // USER INTERACTIONS
 // =================
 {
