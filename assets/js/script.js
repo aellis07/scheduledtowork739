@@ -270,4 +270,28 @@ function findCurrentTime() {
 {
   button7.on("click", saveScheduleSeven);
   storeScheduleSeven();
+
+  button8.on("click", saveScheduleEight);
+  storeScheduleEight();
+
+  button9.on("click", saveScheduleNine);
+  storeScheduleNine();
+
+  button10.on("click", saveScheduleTen);
+  storeScheduleTen();
+
+  button11.on("click", saveScheduleEleven);
+  storeScheduleEleven();
+
+  button12.on("click", saveScheduleTwelve);
+  storeScheduleTwelve();
+
+  button1.on("click", saveScheduleOne);
+  storeScheduleOne();
+
+  button2.on("click", saveScheduleTwo);
+  storeScheduleTwo();
+
+  button3.on("click", saveScheduleThree);
+  storeScheduleThree();
 }
