@@ -103,7 +103,7 @@ function findCurrentTime() {
     $("#p12").addClass("past");
   }
 
-  if (currentTime > 1) {
+  if (currentTime < 1) {
     $("#p1").addClass("future");
   } else if (currentTime == 1) {
     $("#p1").addClass("present");
@@ -111,7 +111,7 @@ function findCurrentTime() {
     $("#p1").addClass("past");
   }
 
-  if (currentTime > 2) {
+  if (currentTime < 2) {
     $("#p2").addClass("future");
   } else if (currentTime == 2) {
     $("#p2").addClass("present");
@@ -119,7 +119,7 @@ function findCurrentTime() {
     $("#p2").addClass("past");
   }
 
-  if (currentTime > 3) {
+  if (currentTime < 3) {
     $("#p3").addClass("future");
   } else if (currentTime == 3) {
     $("#p3").addClass("present");
